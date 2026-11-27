@@ -1,0 +1,12 @@
+/* Homepage-only adjustments for the static GitHub Pages site. */
+
+/* Hide navigation items that are not available in the static storefront. */
+.nav-links a[href*="category=flowers"],
+.nav-actions a[aria-label="Wishlist"] {
+  display: none !important;
+}
+
+/* Keep homepage photography cropped consistently. */
+.home-photo {
+  object-fit: cover;
+}
