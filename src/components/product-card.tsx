@@ -13,7 +13,7 @@ export function ProductCard({ product }: { product: Product }) {
 
   return (
     <>
-      <article className="group">
+      <article className="group card-3d">
         <div className="relative overflow-hidden rounded-card bg-beige">
           <Link to="/product/$slug" params={{ slug: product.slug }}>
             <img src={product.image} alt={product.name} className="aspect-square w-full object-cover transition duration-500 group-hover:scale-[1.03]" />

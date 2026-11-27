@@ -219,6 +219,42 @@ export const seedPosts: Post[] = [
       "Charms on bags are the hardiest. If a ring loosens, write to us. We would rather restitch a finding than have you lose it.",
     ],
   },
+  {
+    slug: "gifting-crochet-without-wilt",
+    title: "What to write when you gift a crochet flower",
+    excerpt: "A short card line matters more than a long explanation of the yarn.",
+    date: "November 21, 2026",
+    image: "/products/flowers.jpg",
+    body: [
+      "People sometimes hesitate because the bouquet is not fresh. Say what it is in one line: it is crocheted, it stays, and it was made for them.",
+      "A useful card is specific. Name the colour, the occasion, or the windowsill you pictured. Skip the fibre lecture unless they ask.",
+      "If the piece is a charm, mention where you imagined it living — a bag, a key, a pram. The object feels finished when it has a place.",
+    ],
+  },
+  {
+    slug: "choosing-a-palette",
+    title: "How we choose a palette before the first petal",
+    excerpt: "Blush next to bark reads warm. Blush next to bright white reads cooler. The room decides.",
+    date: "October 2, 2026",
+    image: "/products/peony.jpg",
+    body: [
+      "Send a photo of the shelf, the dress, or the wrapping paper. We match yarn in daylight, not under a phone flash.",
+      "Two colours plus a leaf green is usually enough. A third bright hue fights the flower unless the piece is a charm meant to be loud.",
+      "If you are unsure, cream and blush is the house pairing. It sits with wood, linen, and most gift wrap without shouting.",
+    ],
+  },
+  {
+    slug: "small-batch-shipping",
+    title: "How a small-batch crochet order actually ships",
+    excerpt: "Ready pieces leave in a few days. Custom work waits for a yes on colour.",
+    date: "August 14, 2026",
+    image: "/products/workshop.jpg",
+    body: [
+      "A listed piece is already made. After checkout we pack it, not start it. That is why stock numbers drop when an order is placed.",
+      "Custom work is the opposite. Nothing is hooked until you approve the palette and the date. A rush date that we cannot meet is refused before payment, not after.",
+      "This preview shop keeps the order on your device and does not charge a card. A live shop would hand the same reference to a courier.",
+    ],
+  },
 ];
 
 export const faqs = [

@@ -35,9 +35,26 @@
   margin-inline: auto;
 }
 
-@keyframes rise {
-  from { opacity: 0; transform: translateY(12px); }
+@keyframes tilt-in {
+  from { opacity: 0; transform: rotateX(12deg) translateY(24px); }
   to { opacity: 1; transform: none; }
+}
+.stage {
+  perspective: 1200px;
+}
+.card-3d {
+  transform-style: preserve-3d;
+  transition: transform 0.45s ease;
+}
+.card-3d:hover {
+  transform: rotateY(-8deg) rotateX(6deg) translateY(-6px);
+}
+.spin-slow { animation: spin 18s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
+.icon-pop { transition: transform 0.35s ease; }
+.group:hover .icon-pop { transform: translateY(-4px) rotate(-8deg) scale(1.08); }
+@media (prefers-reduced-motion: reduce) {
+  .card-3d, .spin-slow, .icon-pop { animation: none; transition: none; }
 }
 @keyframes floaty {
   0%, 100% { transform: translateY(0); }

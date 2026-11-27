@@ -23,9 +23,10 @@ function Home() {
             <Link to="/collections/$slug" params={{ slug: "flowers" }} className="inline-grid h-12 place-items-center rounded-full border border-bark/20 px-6 text-bark">Explore collections</Link>
           </div>
         </div>
-        <div className="relative">
-          <img src="/products/bouquet.jpg" alt="Crochet-inspired blush bouquet" className="aspect-[4/5] w-full rounded-card object-cover" />
-          <img src="/products/daisy.jpg" alt="" className="floaty absolute left-4 bottom-8 hidden w-32 rounded-2xl border-4 border-cream object-cover shadow-lg md:block" />
+        <div className="stage relative">
+          <img src="/products/bouquet.jpg" alt="Blush bouquet styled for Knots and Bloom" className="card-3d aspect-[4/5] w-full rounded-card object-cover shadow-xl" />
+          <img src="/brand/logo.jpg" alt="" className="absolute -left-2 top-6 hidden size-24 rounded-full border-4 border-cream object-cover shadow-lg md:block" />
+          <img src="/products/daisy.jpg" alt="" className="floaty card-3d absolute right-4 bottom-8 hidden w-32 rounded-2xl border-4 border-cream object-cover shadow-lg md:block" />
         </div>
       </section>
 
@@ -78,8 +79,8 @@ function Home() {
             [Gift, "Personal gifts", "A note under the ribbon, or a colour made for someone."],
             [SwatchBook, "Quality materials", "Cotton and soft blends that keep their face."],
           ].map(([Icon, title, copy]) => (
-            <div key={title as string} className="rounded-card border border-line bg-paper p-4">
-              <Icon className="size-5 text-sage-deep" />
+            <div key={title as string} className="group rounded-card border border-line bg-paper p-4 card-3d">
+              <Icon className="icon-pop size-5 text-sage-deep" />
               <h3 className="mt-3 font-display text-2xl text-bark">{title as string}</h3>
               <p className="mt-1 text-sm text-muted">{copy as string}</p>
             </div>
