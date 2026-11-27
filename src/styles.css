@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cream: #faf7f2;
+  --color-beige: #e8dccb;
+  --color-blush: #ebd5d0;
+  --color-sage: #a8b5a2;
+  --color-sage-deep: #6f7d68;
+  --color-bark: #49382e;
+  --color-ink: #333333;
+  --color-muted: #7a6a60;
+  --color-line: #e4d8cb;
+  --color-paper: #fffdf9;
+  --font-sans: "Outfit", system-ui, sans-serif;
+  --font-display: "Cormorant Garamond", Georgia, serif;
+  --radius-card: 1.25rem;
+}
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--color-cream);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-weight: 400;
+    line-height: 1.55;
+  }
+  h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 500; letter-spacing: -0.02em; }
+  button:not(:disabled), [role="button"]:not(:disabled) { cursor: pointer; }
+  ::selection { background: #ebd5d0; color: #49382e; }
+}
+
+@utility container-shop {
+  width: min(1120px, calc(100% - 2rem));
+  margin-inline: auto;
+}
+
+@keyframes rise {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: none; }
+}
+@keyframes floaty {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+.rise { animation: rise 0.7s ease both; }
+.floaty { animation: floaty 6s ease-in-out infinite; }
+@media (prefers-reduced-motion: reduce) {
+  .rise, .floaty { animation: none; }
+  html { scroll-behavior: auto; }
+}
